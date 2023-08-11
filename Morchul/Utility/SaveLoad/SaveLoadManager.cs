@@ -69,7 +69,7 @@ namespace Morchul.Utility.SaveLoad
 			currentSaveSlotIndex = -1;
 			foreach (string directory in saveSlots)
 			{
-				LoadSaveSlot(directory);
+				LoadSaveSlot(new DirectoryInfo(directory).Name);
 			}
 		}
 
